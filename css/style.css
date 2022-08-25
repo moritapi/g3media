@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@media (min-width: 480px) {	
+}
+	ul{
+		margin: 0;
+		padding: 0px;
+		list-style: none;
+	}
+
+	body {
+		
+		font-family: 'Roboto', sans-serif;
+		background-image: linear-gradient(225deg, #ffedff 0, #f0caff 25%, #b6a4eb 50%, #837eaf 75%, #5b5c7a 100%);
+	}
+
+	header {
+		background:#fff;
+		width:100%;
+		padding:20px;
+		box-shadow: 5px 5px 20px #c8c8c8, 
+	             -5px -5px 20px #ffffff;
+
+		/* Flexbox */
+		display: flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	.contenedor {
+		background:#fff;
+		width:90%;
+		max-width:1200px;
+		margin:auto;
+
+		/* Flexbox */
+		display:flex;
+		flex-flow:row wrap;
+	}
+
+	header .logo img {
+		width:100px;
+		vertical-align: top;
+	}
+
+	header .logo a {
+		color:#fff;
+		text-decoration: none;
+		line-height:50px;
+	}
+
+	header nav {
+		width:50%;
+		/* Flexbox */
+
+		display:flex;
+		flex-wrap:wrap;
+		align-items:center;
+	}
+
+	header nav a {
+		background:#fff;
+		color:#3B2E43;
+		text-align: center;
+		text-decoration: none;
+		padding:10px;
+
+		/* Flexbox */
+		flex-grow:1;
+	}
+
+	header nav a:hover {
+		background:#E6E7E8;
+	}
+
+	section .main {
+		background:#fff;
+		padding:20px;
+
+		flex:1 1 70%;
+		/*flex:1;*/
+	}
+
+/* SLIDER HOME :)*/
+
+section .main div{
+		display: flex;
+		width: 900px;
+	}
+
+/* PORTAFOLIO SERVICIOS*/
+
+	section .servicios{
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+		padding: 20px;
+	}
+
+/* MUESTRAS SERVICIOS*/
+
+	.vitrina {
+		width: 100%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: repeat(3, 200px);
+		grid-template-areas: 'impresion diseno'
+							 'app radio'
+							 'cine eventos'
+	}
+
+	.vitrina > div {
+		display: flex;
+		align-items: stretch; /*vertical*/
+		justify-content: center; /* horizonal */
+		background-color: black
+	}
+	.vitrina a {
+		color: white;
+		font-size: 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.vitrina a:hover {
+		opacity: 0.7 /*0 - 1*/;
+	}
+
+	.grid1 {
+		grid-area: impresion
+	}
+
+	.grid1 a {
+		background-image: url("../images/print-foto.jpg");
+	}
+
+	.grid2 {
+		grid-area: diseno
+	}
+
+	.grid2 a {
+		background-image: url("../images/design-foto.jpg");
+	}
+
+	.grid3 {
+		grid-area: app
+	}
+
+	.grid3 a {
+		background-image: url("../images/app-foto.jpg");
+	}
+
+	.grid4 {
+		grid-area: radio
+	}
+
+	.grid4 a {
+		background-image: url("../images/radio-foto.jpg");
+	}
+
+	.grid5 {
+		grid-area: cine
+	}
+
+	.grid5 a {
+		background-image: url("../images/cine-foto.jpg");
+	}
+	.grid6 {
+		grid-area: eventos
+	}
+
+	.grid6 a {
+		background-image: url("../images/eventos-foto.jpg");
+	}
+
+/* NOSOTROS */
+
+	.nosotros {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 20px;
+		align-items: baseline;
+	}
+
+	.nosotros .about {
+		display: flex;
+		align-items: baseline;
+		justify-content: right;
+		column-gap: 30px;
+		margin-top: 40px;
+	}
+
+	.nosotros img {
+		width: 100%;
+	}
+
+	.nosotros .text {
+		flex: 1;
+	}
+
+/* CLIENTES */
+
+section .clientes{
+		display: flex;
+		width: 100%;
+		padding: 10px;
+		margin: auto;
+		flex-flow: row wrap;
+
+}
+
+	footer {
+		background:#EF4136;
+		width: 100%;
+		padding:20px;
+
+		/* Flexbox */
+		display: flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+
+	footer .links {
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	footer .links a {
+		flex-grow:1;
+
+		color:#fff;
+		padding:10px;
+		text-align: center;
+		text-decoration:none;
+	}
+
+	footer .links a:hover {
+		background:#BE1E2D;
+	}
+
+	footer .social a {
+		color:#fff;
+		text-decoration: none;
+		padding:10px;
+		display: inline-block;
+	}
+
+	footer .info p {
+		color:#fff;
+		text-decoration: #fff;
+		padding:10px;
+		flex-wrap: 2;
+	}

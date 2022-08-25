@@ -1,0 +1,87 @@
+.body {
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(225deg, #ffedff 0, #f0caff 25%, #b6a4eb 50%, #837eaf 75%, #5b5c7a 100%);
+}
+
+.body .header {
+  background: #fff;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 20px #c8c8c8,  -5px -5px 20px #ffffff;
+          box-shadow: 5px 5px 20px #c8c8c8,  -5px -5px 20px #ffffff;
+  /* Flexbox */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .contenedor {
+  background: #fff;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  /* Flexbox */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.body .header .logo img {
+  width: 100px;
+  vertical-align: top;
+}
+
+.body .logo a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.body .nav {
+  width: 50%;
+  /* Flexbox */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body a {
+  background: #fff;
+  color: #3B2E43;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  /* Flexbox */
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.body .nav a:hover {
+  background: #E6E7E8;
+}
+
+.body section .main {
+  background: #fff;
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  /*flex:1;*/
+}
+/*# sourceMappingURL=estilo.css.map */
