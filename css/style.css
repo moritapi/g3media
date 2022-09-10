@@ -3,100 +3,140 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-@media (min-width: 480px) {	
+body {
+	font-family: 'Roboto', sans-serif;
 }
-	ul{
-		margin: 0;
-		padding: 0px;
-		list-style: none;
-	}
+ul{
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+}
 
-	body {
-		
-		font-family: 'Roboto', sans-serif;
-		background-image: linear-gradient(225deg, #ffedff 0, #f0caff 25%, #b6a4eb 50%, #837eaf 75%, #5b5c7a 100%);
-	}
+body {
+	background:#e9e9e9;
+	font-family: 'Roboto', sans-serif;
+}
 
-	header {
-		background:#fff;
-		width:100%;
-		padding:20px;
-		box-shadow: 5px 5px 20px #c8c8c8, 
-	             -5px -5px 20px #ffffff;
+header {
+	background:#fff;
+	width:100%;
+	padding:20px;
+	box-shadow: 5px 5px 20px #c8c8c8, 
+			 -5px -5px 20px #ffffff;
 
-		/* Flexbox */
-		display: flex;
-		justify-content:space-between;
-		align-items:center;
-	}
-	.contenedor {
-		background:#fff;
-		width:90%;
-		max-width:1200px;
-		margin:auto;
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.contenedor {
+	background:#fff;
+	width:90%;
+	max-width:1200px;
+	margin:auto;
 
-		/* Flexbox */
-		display:flex;
-		flex-flow:row wrap;
-	}
+	/* Flexbox */
+	display:flex;
+	flex-flow:row wrap;
+}
 
-	header .logo img {
-		width:100px;
-		vertical-align: top;
-	}
+header .logo img {
+	width:100px;
+	vertical-align: top;
+}
 
-	header .logo a {
-		color:#fff;
-		text-decoration: none;
-		line-height:50px;
-	}
+header .logo a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
 
-	header nav {
-		width:50%;
-		/* Flexbox */
+header nav {
+	width:50%;
+	/* Flexbox */
 
-		display:flex;
-		flex-wrap:wrap;
-		align-items:center;
-	}
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
 
-	header nav a {
-		background:#fff;
-		color:#3B2E43;
-		text-align: center;
-		text-decoration: none;
-		padding:10px;
+header nav a {
+	background:#fff;
+	color:#3B2E43;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
 
-		/* Flexbox */
-		flex-grow:1;
-	}
+	/* Flexbox */
+	flex-grow:1;
+}
 
-	header nav a:hover {
-		background:#E6E7E8;
-	}
+header nav a:hover {
+	background:#E6E7E8;
+}
 
-	section .main {
-		background:#fff;
-		padding:20px;
+section .main {
+	background:#fff;
+	padding:20px;
 
-		flex:1 1 70%;
-		/*flex:1;*/
-	}
-
-/* SLIDER HOME :)*/
-
-section .main div{
-		display: flex;
-		width: 900px;
-	}
-
+	flex:1 1 70%;
+	/*flex:1;*/
+}
 /* PORTAFOLIO SERVICIOS*/
 
-	section .servicios{
-		display: grid;
-		gap: 2rem;
-		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	.container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+
+	.cards{ 
+		background-color: white;
+		border-radius: 15px;
+		box-shadow: 5px 5px 20px #c8c8c8, 
+	             -5px -5px 20px #ffffff;
+	}
+
+	.card-img img{
+		width:100%;
 		padding: 20px;
+		border-radius: 5px 5px 0px 0px;
+
+
+		flex:1 1 70%;
+	}
+
+	.card-body p{
+		padding: 5px;
+	}
+
+	.card-body h1{ 
+		padding: 5px;
+	}
+
+	.card-footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.card-footer button {
+		display: 150px;
+		background-color: grey;
+		color: white;
+		border-radius: 10px;
+		padding: 6px;
+		font-size: 12px;
+		cursor: pointer;
+		margin-bottom: 10px;
+		transition: 0.2s;
+
+	}
+	.card-footer button:hover {
+		background-color: white;
+		color: red;
+		border: 2px solid black;
 	}
 
 /* MUESTRAS SERVICIOS*/
@@ -130,13 +170,11 @@ section .main div{
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
-		transition: all 0.2s ease-in-out;
 	}
 
 	.vitrina a:hover {
 		opacity: 0.7 /*0 - 1*/;
 	}
-
 	.grid1 {
 		grid-area: impresion
 	}
@@ -186,40 +224,33 @@ section .main div{
 
 /* NOSOTROS */
 
-	.nosotros {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 20px;
-		align-items: baseline;
-	}
-
-	.nosotros .about {
-		display: flex;
-		align-items: baseline;
-		justify-content: right;
-		column-gap: 30px;
-		margin-top: 40px;
-	}
-
-	.nosotros img {
-		width: 100%;
-	}
-
-	.nosotros .text {
-		flex: 1;
-	}
-
-/* CLIENTES */
-
-section .clientes{
-		display: flex;
-		width: 100%;
-		padding: 10px;
-		margin: auto;
-		flex-flow: row wrap;
-
+.about{
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
 }
+
+.about-img img{
+	width: 100%
+}
+
+.about-body {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+	margin-top: 10px;
+}
+.about-body p{
+	margin-top: 30px;
+	width: 100%;
+}
+
+.about-body h1{
+	text-align: center;
+}
+/* FOOTER */
 
 	footer {
 		background:#EF4136;
@@ -229,25 +260,11 @@ section .clientes{
 		/* Flexbox */
 		display: flex;
 		flex-wrap:wrap;
-		justify-content:space-between;
-	}
-
-	footer .links {
-		display:flex;
-		flex-wrap:wrap;
-	}
-
-	footer .links a {
-		flex-grow:1;
-
-		color:#fff;
-		padding:10px;
-		text-align: center;
-		text-decoration:none;
+		justify-content:center;
 	}
 
 	footer .links a:hover {
-		background:#BE1E2D;
+		background:#56040d;
 	}
 
 	footer .social a {
@@ -256,10 +273,83 @@ section .clientes{
 		padding:10px;
 		display: inline-block;
 	}
+	.contact-container,
+	.map{
+	width: 100%;
+	margin: 5px;
+	margin-top: 10px;
+	padding: 5px;
+	display: grid;
+	align-items: stretch;
+	grid-template-columns: repeat(2, 1fr);
+	}
 
-	footer .info p {
-		color:#fff;
-		text-decoration: #fff;
-		padding:10px;
-		flex-wrap: 2;
+	.form-container{
+		padding: auto;
+	}
+	.form-container h1{
+		align-items: center;
+	}
+	.contact-form{
+		display: grid;
+		row-gap: 1rem;
+		margin: 10px;
+	}
+	.contact-form input,
+	.contact-form textarea{
+	width: 100%;
+	border: none;
+	outline: none;
+	background: #dbdbdb;
+	padding: 5px;
+	font-family: 0.9rem;
+	color: rgb(0, 0, 0);
+	border-radius: 0.4rem;
+	}
+
+	.contact-form textarea{
+		resize: none;
+		height: 200px;
+	}
+	.contact-form .send-button{
+		border: none;
+		outline: none;
+		background: #3B2E43;
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	.contact-form .send-button:hover{
+		background: hs1(181,1005);
+		transition: 0,3s all linear;
+	}
+	.map iframe{
+		width: 100%;
+		height: 100%;
+	}
+
+@media screen and (min-width: 480px){	
+	
+		.about {
+			flex-wrap: wrap;
+			padding: 5px;
+		}
+		.about-img img {
+			width: 100%;
+		}
+		.about-body {
+			flex: 1;
+			margin: 0;
+			padding: 10px;
+		}
+		.about-body p {
+			order: 1;
+			font-size: 18px;
+		}
+		.container .cards {
+			flex-wrap: wrap;
+			width: 50%;
+			margin: 0;
+			padding: 5px;
+			display: grid;
+		}
 	}
